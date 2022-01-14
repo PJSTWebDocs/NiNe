@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NiNe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+<link rel="icon" href="child.ico">
+<link rel="stylesheet" href="login_css.css">
+</head>
+<body>
+<!--
+===================
+LOGIN PAGE
+===================
+-->    
+<div class="login1">
+<h2>
+Login to our site
+</h2>
+<form  action="index.html" name=" tharun2" method="get">
+<p class="p1">Name :</p> <input class="input1" name="name1" type="text" placeholder="Please enter your Login ID">
+<p class="p2">Password : </p><input class="input2" name="pass" type="password" placeholder="Enter your password">
+<input class="input3" type="submit" onclick="return validate2()" value="submit">
+<input class="a" type="button" onclick="show()" value="Register">
+</form>
+</div>
+<!--
+===================
+REGISTER PAGE
+===================
+-->
+<div class="register">
+<h2>
+Please Register to our site
+</h2>
+<form name="tharun">
+<p class="p1">Name :</p> <input class="input1" name="username" type="text" placeholder="Please enter your Login ID">
+<p class="p2">Password : </p><input class="input2" name="userpass1" type="password" placeholder="Enter your password" onkeyup="wound()">
+<span id="mylocation"></span>
+<p class="p3">Re-Enter Password : </p><input class="input4" name="userpass2" type="password" placeholder="Re-enter your password">
+<input class="input3" type="button" value="Register" onclick="validate()">
+<input class="a" type="button"  value="Login"  onclick="show()">
+</form>
+</div>
+<!--
+===================
+TIME PAGE
+===================
+-->
+<div class="today">
+Current Time :
+<span id="time1"></span>
+<br>
+<p class="hi">Heey! Hiii </p>
+<span id="txt"></span>
+<p class="welcome">Welcome to <span style="color:red; text-shadow: 2px 2px 8px #f8f1f1;">NiNe</span></p>
+</div>
+<script type="text/javascript">
+ window.onload=function(){gettime();}
+function gettime()
+{
+    var today=new Date();
+    var h=today.getHours();
+    var m=today.getMinutes();
+    var s=today.getSeconds();
+    
+    if(h>11 && h<16)
+    {
+        document.getElementById("txt").innerHTML="Good AfterNoon";
+            
+    }
+    else if(h>=16 && h<19){
+        document.getElementById("txt").innerHTML="Good Evening";
+            }
+    else if(h>=19 && h<=23){
+        document.getElementById("txt").innerHTML="Good Night";
+    }
+    else{
+        document.getElementById("txt").innerHTML="Good Morning";
+    }
+    m=checkTime(m);  
+    s=checkTime(s);
+    document.getElementById('time1').innerHTML= h+":"+m+":"+s;
+    setTimeout(function() {gettime()},1000);
+}
+function checkTime(i){  
+if (i<10){  
+  i="0" + i;  
+ }  
+return i;  
+} 
+
+function show()
+{
+var x=document.getElementsByClassName("login1");
+var y=document.getElementsByClassName("register");
+if(x[0].style.display != "none")
+{
+    x[0].style.display="none";
+    y[0].style.display="block";
+}
+else
+{
+    y[0].style.display="none";
+    x[0].style.display="block";
+}
+}
+function wound()
+{
+    var msg;
+    if(document.tharun.userpass1.value.length>6)
+    {
+        msg="password strength is good";
+    }
+    else
+    {
+        msg="password strength is poor";
+    }
+    document.getElementById("mylocation").innerHTML=msg;
+}
+var flag=0;
+function validate()
+{
+    var name=document.getElementsByName("username").value;
+    var password1=document.tharun.userpass1.value;
+    var password2=document.tharun.userpass2.value;
+    if(password1==password2)
+    {
+        alert("Your registration is completed. Please Login");
+        flag=1;
+        show()
+        return true;
+    }
+    else
+    {
+        alert("Password must be same");
+        return false;
+    }
+}
+function validate2()
+{
+    if(flag==0)
+    {
+        alert("please register to our site");
+        return false;
+    }
+    else{
+        var name2=document.tharun2.name1.value;
+        var pass2=document.tharun2.pass.value;
+        if(name==name2 && password1==pass2)
+        {
+            return true;
+        }
+        else{
+            alert("Username and password didnot match");
+        }
+    }
+}
+</script>
+</body>
+</html>

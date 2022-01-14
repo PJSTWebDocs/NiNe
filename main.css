@@ -1,0 +1,255 @@
+*{
+    margin:0;
+    padding:0;    
+}
+/* 
+===============================================
+            navigation pannel
+===============================================
+ */
+ nav{
+     position: sticky;
+     background: linear-gradient(rgb(24, 172, 86), rgb(255,255,255));
+     height: 120px;
+ }
+ nav img{
+     height: 30px;
+     width: 30px;
+     border-radius: 25%;
+     margin-top: 20px;
+     margin-left: 25px;
+ }
+ nav .nine{
+     position: absolute ;
+     margin-top: 8px;
+     margin-left: 5px;
+    font-family: 'Moon Dance', cursive;
+     color: red;
+     text-shadow: 2px 2px 8px #f1ecec;;
+     font-weight: bolder;
+    letter-spacing: 1.5px;
+     font-size: 40px;
+     text-decoration: none;
+ }
+ nav .nine sub{
+     font-size: 15px;
+ }
+ nav ul {
+     float: right;
+     padding-right: 60px;
+     font-size: 20px;
+     margin-top: 20px;
+ }
+ nav ul li{
+     display:inline;
+     margin-left: 40px;
+ }
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color:yellow;
+}
+/*
+===================
+    first section slide show
+===================
+*/
+.first_section
+{
+    position: relative;
+    height: 600px;
+    width: 100%;
+    
+}
+.slideshow .slides img{
+    border-radius: 0 10% 25% 10%;
+    border-right:5px solid rgb(245, 244, 242);
+    border-bottom:5px solid rgb(245, 244, 242);
+    box-shadow: 12px 20px 18px 0 rgb(32, 201, 32);    
+}
+.slides{
+    margin-left: 25px;
+    height: 450px;
+    width: 1300px;
+    display: none;
+}
+.back, .next{
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    padding: 30px;
+    top:175px;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+  user-select: none;
+    
+}
+.next{
+    right:0;
+    border-radius: 3px 0 0 3px
+}
+.back:hover, .next:hover {
+    background-color: rgb(207, 228, 233);
+    border-radius: 80px;
+    opacity: 0.5;
+  }
+  .dots{
+      position:absolute;
+      margin-top: -10px;
+      margin-left: 630px;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #da2828;
+  }
+.welcome{
+    position: absolute;
+    text-align: center;
+    margin-top: 380px;
+    margin-left: 550px;
+    font-family: 'Moon Dance', cursive;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    color: rgb(77, 218, 42);
+    text-shadow: 2px 2px 8px #e9854b;;
+}
+.welcome span{
+    color: rgb(223, 52, 29);
+    text-shadow: 2px 2px 8px #f3edea;;
+}
+/*
+==================
+    TOP BUTTON
+==================
+*/
+#gototop{
+    position:sticky;
+    height: 20px;
+    width: 40px;
+    float: right;
+    padding-top: 500px;
+    padding-right: 50px;
+    top: 0;
+}
+.run{
+    color: #f5f0f0;
+    background-color: #0f0e0e;
+}
+.run:hover{
+    background-color: #b90a0a;
+}
+/*
+=====================
+   SECOND SECTION
+=====================
+*/
+.second_section{
+    height: 100vh;
+    position: relative;
+}
+.second_section h2{
+    font-family:'Moon Dance', cursive;
+    font-size: 50px;
+    padding-left: 50px;
+    letter-spacing: 1.5px;
+    color: #da2828;
+    text-shadow: 2px 2px 8px #3fee13;;
+}
+.second_section .para{
+    background:linear-gradient(rgba(62, 224, 57,0.5),rgba(239, 243, 239, 0.5));
+    border-radius: 10%;
+}
+.second_section p{
+    font-family:'Mochiy Pop P One', sans-serif;
+    font-size: 20px;
+    padding: 35px;
+    padding-top: 25px;
+    letter-spacing: 1px;
+    color: #0f0e0e;
+    text-align: justify;
+}
+/*
+======================
+     PROFILE PAGE
+======================
+*/
+.third_section{
+    position: relative;
+    height: 100vh;
+    top: 270px;
+}
+.third_section h2{
+    font-family:'Moon Dance', cursive;
+    font-size: 50px;
+    padding-left: 50px;
+    letter-spacing: 1.5px;
+    color: #da2828;
+    text-shadow: 2px 2px 8px #3fee13;;
+}
+.third_section img{
+    margin-left: 250px;
+    border-radius: 50%;
+    box-shadow: 8px 12px 8px 5px #3fee13;;
+}
+.third_section .para{
+    background:linear-gradient(rgba(62, 224, 57,0.5),rgba(239, 243, 239, 0.5));
+    border-radius: 10%;
+}
+.profile{
+    position: relative;
+    font-family:'Moon Dance', cursive;
+    font-weight: bolder;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    top: 25px;
+    left: 100px;
+    border-radius: 10%;
+    box-shadow: 10px 10px  #3fee13;;
+}
+.profile th{
+    font-size: 40px;
+    text-shadow: 2px 2px 8px #3fee13;;
+}
+footer{
+    position: relative;
+    background: linear-gradient(rgb(13, 155, 25),rgb(57, 75, 59));
+    height:50vh;
+    top: 400px;
+}
+footer .icons{
+    padding: 55px;
+    color: white;
+    font-size: 25px;
+}
+footer .support{
+    position: absolute;
+    top: 50px;
+    left: 350px;
+}
+footer .support h2{
+    font-size: 35px ;
+    color: rgb(250, 242, 242);
+    margin-bottom: 25px;
+}
+footer .support p{
+   font-size: 30px ;
+   margin-top: 15px;
+
+}
+footer .support a{
+    color:white;
+    text-decoration: none;
+}

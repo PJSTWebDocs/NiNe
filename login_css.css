@@ -1,0 +1,275 @@
+*{
+margin:0;
+padding:0;
+}
+/*
+===================
+LOGIN PAGE
+===================
+*/    
+body{
+background-image:url("https://prmceam.ac.in/wp-content/uploads/2015/03/background-learner1.jpg");
+height: 80vh;
+background-repeat: no-repeat;
+background-size:cover; 
+background-position: center;
+overflow: hidden;
+
+}
+.login1{
+display:block;
+height: 250px;
+width: 350px;
+margin: 150px 0px 400px 900px;
+top: 100px;
+left: 100px;
+background: linear-gradient(grey, white) ;
+text-align: justify;
+border-radius: 15%;
+border-bottom: 5px solid rgb(215, 23, 23);
+border-right: 5px solid rgb(215, 23, 23);
+box-shadow:3px 15px 15px 3px rgb(24, 172, 86);
+}
+.login1 h2{
+color: rgb(223, 222, 213);
+letter-spacing: 1.5px;
+position: absolute;
+font-family: 'Orelega One', cursive;
+margin: 5px 20px 5px 70px;
+
+}
+.login1 form .p1{
+position: relative;
+top: 55px;
+left: 15px;
+font-size: 20px;
+}
+.login1 form .input1{
+position: relative;
+top: 31px;
+left: 120px;
+padding: 5px;
+background: rgba(240, 184, 184, 0.712);
+color: white;
+border-radius: 25%;
+box-shadow: 0px 5px 5px 0px rgb(231, 77, 198);
+cursor: pointer;
+}
+.login1 form .input1:hover{
+color:rgb(238, 8, 8);
+background-color:rgb(255, 255, 255);
+padding: 8px 10px;
+border-radius: 15px;
+}
+.login1 form .p2{
+position: relative;
+top: 70px;
+left: 15px;
+font-size: 20px;
+}
+.login1 form .input2{
+position: relative;
+top: 44px;
+left: 120px;
+padding: 5px;
+background: rgba(240, 184, 184, 0.712);
+color: white;
+border-radius: 25%;
+box-shadow: 0px 5px 5px 0px rgb(231, 77, 198);
+cursor: pointer;
+}
+.login1 form .input2:hover{
+color:rgb(238, 8, 8);
+background-color:rgb(255, 255, 255);
+padding: 8px 10px;
+border-radius: 15px;
+}
+.login1 form .input3{
+position: absolute;
+margin-left: -125px;
+margin-top:130px; 
+padding: 5px;
+background: rgba(54, 71, 172, 0.712);
+color: white;
+letter-spacing: 2px;
+border-radius: 25%;
+box-shadow: 0px 5px 5px 0px rgb(214, 221, 120);   
+}
+.login1 form .input3:hover{
+color:rgb(238, 8, 8);
+background-color:rgb(120, 198, 221);
+padding: 8px 10px;
+border-radius: 15px;
+}
+.login1 form .a{
+position: relative;
+left:55px;
+top: 130px; 
+padding: 5px;
+background: rgba(54, 71, 172, 0.712);
+color: white;
+letter-spacing: 2px;
+border-radius: 25%;
+box-shadow: 0px 5px 5px 0px rgb(214, 221, 120); 
+}
+.login1 form .a:hover{
+color:rgb(238, 8, 8);
+background-color:rgb(120, 198, 221);;
+padding: 8px 10px;
+border-radius: 15px;
+}
+.register{
+display: none;
+height: 300px;
+width: 400px;
+margin: 150px 0px 400px 870px;
+top: 100px;
+left: 100px;
+background: linear-gradient(grey, white) ;
+text-align: justify;
+border-radius: 15%;
+border-bottom: 5px solid rgb(215, 23, 23);
+border-right: 5px solid rgb(215, 23, 23);
+box-shadow:3px 15px 15px 3px rgb(24, 172, 86);
+}
+.register h2{
+color: rgb(223, 222, 213);
+letter-spacing: 1px;
+position: absolute;
+font-family: 'Orelega One', cursive;
+margin: 15px 20px 5px 30px;
+
+}
+.register form .p1{
+position: relative;
+top: 55px;
+left: 15px;
+font-size: 20px;
+}
+.register form .input1{
+position: relative;
+top: 31px;
+left: 120px;
+padding: 5px;
+background: rgba(240, 184, 184, 0.712);
+color: white;
+border-radius: 25%;
+box-shadow: 0px 5px 5px 0px rgb(231, 77, 198);
+cursor: pointer;
+}
+.register form .input1:hover{
+color:rgb(238, 8, 8);
+background-color:rgb(255, 255, 255);
+padding: 8px 10px;
+border-radius: 15px;
+}
+.register form .p2{
+position: relative;
+top: 70px;
+left: 15px;
+font-size: 20px;
+}
+.register form .input2{
+position: relative;
+top: 44px;
+left: 120px;
+padding: 5px;
+background: rgba(240, 184, 184, 0.712);
+color: white;
+border-radius: 25%;
+box-shadow: 0px 5px 5px 0px rgb(231, 77, 198);
+cursor: pointer;
+}
+.register form .input2:hover{
+color:rgb(238, 8, 8);
+background-color:rgb(255, 255, 255);
+padding: 8px 10px;
+border-radius: 15px;
+}
+.register form .p3{
+position: relative;
+top: 70px;
+left: 15px;
+font-size: 20px;
+}
+.register form .input4{
+position: relative;
+top: 44px;
+left: 190px;
+padding: 5px;
+background: rgba(240, 184, 184, 0.712);
+color: white;
+border-radius: 25%;
+box-shadow: 0px 5px 5px 0px rgb(231, 77, 198);
+cursor: pointer;
+}
+.register form .input4:hover{
+color:rgb(238, 8, 8);
+background-color:rgb(255, 255, 255);
+padding: 8px 10px;
+border-radius: 15px;
+}
+.register form .input3{
+position: absolute;
+margin-left: -125px;
+margin-top:130px; 
+padding: 5px;
+background: rgba(54, 71, 172, 0.712);
+color: white;
+letter-spacing: 2px;
+border-radius: 25%;
+box-shadow: 0px 5px 5px 0px rgb(214, 221, 120);   
+}
+.register form .input3:hover{
+color:rgb(238, 8, 8);
+background-color:rgb(120, 198, 221);
+padding: 8px 10px;
+border-radius: 15px;
+}
+.register form .a{
+padding: 5px;
+background: rgba(54, 71, 172, 0.712);
+color: white;
+letter-spacing: 2px;
+border-radius: 25%;
+box-shadow: 0px 5px 5px 0px rgb(214, 221, 120);
+position: relative;
+left:55px;
+top: 130px;  
+}
+.register form #mylocation{
+    position: relative;
+    top: 75px;
+    left: -25px;
+}
+.register form .a:hover{
+color:rgb(238, 8, 8);
+background-color:rgb(120, 198, 221);;
+padding: 8px 10px;
+border-radius: 15px;
+}
+.today{
+    position: absolute;
+    top: 100px;
+    left:20px;
+    font-family: 'Moon Dance', cursive;
+    font-size: 35px;
+    font-weight: bolder;
+    color: white;
+    letter-spacing: 1.5px;
+}
+.today p{
+    text-shadow: 2px 2px 8px #FF0000;
+    margin-left: 100px;
+}
+.today #txt{
+    text-shadow: 2px 2px 8px #FF0000;
+    margin-left: 190px;
+    font-size: 60px;
+}
+.today .welcome{
+    font-size: 80px;
+}
+.today .welcome span{
+    font-size: 120px;
+}
